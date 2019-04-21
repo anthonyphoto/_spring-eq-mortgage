@@ -42,9 +42,6 @@ export default function reducer (state = initialState, action) {
                 key: keyLower
             });
 
-
-
-
         default:
             return state;
     }

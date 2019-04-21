@@ -5,7 +5,7 @@ import './error-sec.css';
 
 export default function ErrorSec (props) {
     const {message, code} = props.err;
-    // console.log(me);
+    
     return (
 
         <div>

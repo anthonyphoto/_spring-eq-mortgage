@@ -6,8 +6,6 @@ import {required, nonEmpty, email} from './validators'
 import {fetchLoanById, fetchLoanByAttr, fetchLoan} from '../actions/loan';
 import './form.css';
 
-// import './header-bar.css';
-
 export class InputForm extends React.Component {
     constructor(props) {
         super(props);
@@ -85,11 +83,3 @@ export default reduxForm({
         onSubmitFail: (error, dispatch) => dispatch(focus('search', Object.keys(error)))
     })(InputForm);
 
-
-    // export default reduxForm({
-    //     form: 'contact',
-    //     onSubmitFail: (errors, dispatch) =>{
-    //         console.log('err', errors);
-    //         return dispatch(focus('contact', Object.keys(errors)[0]))
-    //     }
-    // })(ContactForm);

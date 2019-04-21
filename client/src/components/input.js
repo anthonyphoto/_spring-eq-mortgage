@@ -21,15 +21,6 @@ export default class Input extends React.Component {
             );
         }
         
-        // let inp = {}
-        // if (this.props.defaultValue) {
-        //     Object.keys(this.props.input).forEach(key => 
-        //         (key === "value") ? inp["defaultValue"] = this.props.defaultValue : inp[key] = this.props.input[key]
-        //     );
-        // } 
-        // else {
-        //     inp = this.props.input;
-        // }
 
         return (
             <div className="form-input">
