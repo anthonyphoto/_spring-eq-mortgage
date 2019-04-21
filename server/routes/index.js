@@ -4,6 +4,7 @@ var router = express.Router();
 var data = require("../data/sample.json");
 
 /* GET home page. */
+/* Anthony created a separate client build for client port 8080 */
 router.get('/', function(req, res, next) {
 	res.render('index', { title: 'Express' });
 });
@@ -14,8 +15,8 @@ router.get('/data', function(req, res, next) {
 
 /* get by loan number (path parameter: loanid) */
 router.get('/data/loanid/:id', function(req, res, next) {
-	const record = data.find(item => item.loan_number === req.params.id)
-	record ? res.json(record) : res.status(404).json({ message: "Not found" });
+	const records = data.filter(item => item.loan_number === req.params.id)
+	res.json(records);
 });
 
 /* 	
@@ -39,9 +40,7 @@ router.get('/data/attr', function(req, res, next) {
 		}
 		return true;
 	})	
-
 	res.json(results);
-	results ? res.json(results) : res.status(404).json({ message: "Not found" });
 });
 
 module.exports = router;

@@ -33,15 +33,10 @@ export default class Input extends React.Component {
 
         return (
             <div className="form-input">
-                <label htmlFor={this.props.input.name}>
-                    {this.props.label}
-                    {
-                        this.props.required?
-                        <span className='req'> *</span> : <span></span>
-                    }
-                    {error}
-                    {warning}
-                </label>
+                <span className="req">
+                        {error}
+                        {warning}
+                </span><br/>
                 <Element
                     {...this.props.input}
                     id={this.props.input.name}
@@ -51,6 +46,7 @@ export default class Input extends React.Component {
                     rows={this.props.rows}
                     ref={input => (this.input = input)}
                 />
+
             </div>
         );
     }

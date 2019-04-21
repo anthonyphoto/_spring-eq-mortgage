@@ -25,15 +25,7 @@ body {
   line-height: 1.5rem;
 }
 
-.main_bg {
-  background-color: white;
-  max-width: 1200px;
-  padding-top: 24px;
-  padding-bottom: 36px;
-  margin: 4em auto;
-  box-shadow: 0 0 10px #D0D0D0;
-  border: 1px solid #DDDDDD;
-}
+
 
 .main_bg_form {
   background-color: white;
@@ -109,7 +101,7 @@ h2 {
   position: fixed;
   width: 300px;
   left: calc(50% - 150px);
-  opacity: 0.2;
+  opacity: 0.6;
   top: 10%;
   padding: 40px 18px 60px 18px;
   justify-content: center;
@@ -124,10 +116,7 @@ h2 {
   background-color: black;
   opacity: 0.8;
 }
-.form {
-  font-size: 16px;
-  width: 320px;
-}
+
 fieldset {
   border: none;
   padding: 0;
@@ -135,12 +124,13 @@ fieldset {
 
 
 .inp {
-  margin-top: 6px;
+  /* margin-top: 6px; */
   margin-bottom: 13px;
-  width: 320px;
-  padding: 14px;
+  width: 250px;
+  padding: 6px;
   font-size: 16px;
-  border: 2px solid #e0e0e0;
+  background-color: #FEFEFE;
+  border: 2px solid #909090;
 }
 
 
@@ -170,14 +160,7 @@ fieldset {
   background-color: #337ab4;
 }
 
-.li_title {
-  color: #0272b6;
-  font-size: 1.1rem;
-  margin-top: 3rem;
-  line-height: 1rem;
-  padding-left: 1%;
-  vertical-align: bottom;
-}
+
 
 .top {
   text-align: left;
