@@ -35,7 +35,7 @@ export class LandingPage extends React.Component{
                 <div>
                     <a href="https://www.springeq.com/" target="_blank"><img src="/img/logo-alt-tm.svg" alt="SpringEQ Logo" width="150px" /></a>
                 </div>
-                <div>
+                <div className='m-div'>
                     <SearchForm />
                 </div>
             </div>

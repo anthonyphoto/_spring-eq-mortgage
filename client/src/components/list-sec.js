@@ -24,7 +24,7 @@ export function ListSec(props) {
 
     return (
         <div>
-            <ul id='js-ul' className='al_center' aria-live='polite'>
+            <ul className='al_center' aria-live='polite'>
                 <li className='li_main bd_bot'>
                     <div className='w1 al-c li_title'>Loan Number</div>
                     <div className='w1 al-c li_title'>State</div>
