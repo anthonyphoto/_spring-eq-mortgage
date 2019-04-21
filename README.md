@@ -16,7 +16,7 @@ A business user wants to see a very simple front-end display for all loans that 
     * Get by an attribute (e.g. First Name = Mike)
 *  Create a front end to visual the data
     * A search box (fuzzy) to give me a list of loans based on either the loan number, first name, last name, city as I type it in (search-ahead)
-The returned list should show the loan number, state, last name and first name with a “detail” collapsible that shows the full record in an easy-to-read format
+    * The returned list should show the loan number, state, last name and first name with a “detail” collapsible that shows the full record in an easy-to-read format
 
 ### Technology Used
 * React/ Redux/ Redux-form/ Thunk
